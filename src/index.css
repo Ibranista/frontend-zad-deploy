@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* additional styles */
+@import './css/additional-styles/utility-patterns.css';
+@import './css/additional-styles/range-slider.css';
+@import './css/additional-styles/toggle-switch.css';
+@import './css/additional-styles/flatpickr.css';
+@import './css/additional-styles/theme.css';
+
+:root {
+  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%; */
+  --welcome-font: "Abhaya Libre";
+  --color-brand: #fb8500;
+  --color-greyish-blue: #35596c;
+  --bg-input-border: #c0c0c0;
+  --font-aladin: "Aladin";
+}
+
+@media (prefers-color-scheme: light) {
+  /* :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  } */
+}
+
+/* layer components */
+@layer components {
+  .font-aladin {
+    font-family: var(--font-aladin);
+  }
+
+  .hero-text {
+    font-size: 4.6em;
+  }
+
+  .welcome-font {
+    font-family: var(--welcome-font);
+  }
+
+  .color-brand {
+    color: var(--color-brand);
+  }
+
+  .color-greyish-blue {
+    color: var(--color-greyish-blue);
+  }
+  
+  .widthofinput{
+    width: 36.7em;
+  }
+
+ .whole-container{
+  min-width: 430px;
+  min-height: 439px;
+ }
+
+  .bg-input-border {
+    border: solid var(--bg-input-border);
+  }
+  .input {
+    @apply bg-input-border
+                rounded-md focus:border-orange-400
+                focus:ring-orange-200
+                focus:shadow-md
+                w-full
+                sm:w-80
+                md:widthofinput
+                px-10
+                py-2;
+  }
+  .product-input {
+    @apply bg-input-border
+                rounded-md focus:border-orange-400
+                focus:ring-orange-200
+                focus:shadow-md
+                py-2
+                w-full;
+  }
+
+  .label {
+    @apply absolute
+           left-4
+           -top-3
+           text-sm
+           scale-75
+         text-gray-400
+         bg-white
+           transition-all
+           duration-300
+           peer-focus:-top-3
+           peer-focus:scale-75
+           peer-focus:px-2
+           peer-focus:lowercase
+         peer-focus:text-orange-400
+           peer-placeholder-shown:top-3
+           peer-placeholder-shown:text-base
+           peer-placeholder-shown:scale-100;
+  }
+  .label-with-icon {
+    @apply absolute
+           left-12
+           -top-3
+           scale-75
+         text-gray-400
+         bg-white
+           transition-all
+           duration-300
+           peer-focus:-top-3
+           peer-focus:scale-75
+           peer-focus:left-10
+           peer-focus:lowercase
+         peer-focus:text-orange-400
+           peer-placeholder-shown:top-3
+           peer-placeholder-shown:text-base
+           peer-placeholder-shown:scale-100;
+  }
+  .input-faIcon {
+    @apply text-gray-400
+           peer-focus:text-black;
+  }
+}
