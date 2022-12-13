@@ -9,7 +9,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { fetchSoldItems } from "../../features/pos/posSlice";
 import { useEffect } from "react";
 
-function DashboardCard01(prices) {
+function DashboardCard01() {
 
   const dispatch = useDispatch();
   // destructure soldItems from useSelecter state.pos
