@@ -11,7 +11,7 @@ const registerProduct = async (productData, token) => {
   });
 
   if (!response.data) {
-    console.log("ሲመዘገብ ሰርቪሱ ምንም ሪስፖንስ አላገኘም!");
+    return "ሲመዘግብ ሰርቪሱ ምንም ሪስፖንስ አላገኘም!";
   }
 
   if (response.data) {
@@ -29,7 +29,7 @@ const fetchProduct = async (token) => {
   });
 
   if (!response.data) {
-    console.log("ሲመዘግብ ሰርቪሱ ምንም ሪስፖንስ አላገኘም!");
+    return "ሲመዘግብ ሰርቪሱ ምንም ሪስፖንስ አላገኘም!";
   }
 
   if (response.data) {

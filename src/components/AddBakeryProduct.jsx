@@ -18,7 +18,6 @@ export default function AddBakeryProduct(props) {
     },
   ]);
   let [selectedOptions, setSelectedOptions] = useState();
-  console.log(selectedOptions);
 
   let addForm = () => {
     let formObject = {
@@ -59,12 +58,7 @@ export default function AddBakeryProduct(props) {
     data[index][e.target.name] = e.target.value;
     setFormData(data);
   };
-  if (selectedOptions) {
-    console.log(
-      "selected: ",
-      selectedOptions.map((items) => items.value)
-    );
-  }
+  
   const onSubmit = (e) => {
     e.preventDefault();
     let productData = formData.map((item) => item);
@@ -74,7 +68,6 @@ export default function AddBakeryProduct(props) {
           ? selectedOptions.map((items) => items.value)
           : "")
     );
-    console.log("productdata: ", productData);
     dispatch(addProduct(productData));
   };
 

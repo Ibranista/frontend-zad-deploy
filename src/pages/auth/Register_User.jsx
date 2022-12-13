@@ -28,9 +28,7 @@ function Register_User() {
   const { user, isError, isSuccess, isLoading, message } = useSelector(
     (state) => state.auth
   );
-  console.log("register", user);
   const x = useSelector((state) => state);
-  console.log("state", x);
   useEffect(() => {
     if (isError) {
       toast.error(message);

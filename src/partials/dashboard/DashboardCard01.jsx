@@ -11,9 +11,7 @@ import { useEffect } from "react";
 import calculationSlice from "../../features/calculations/calculationSlice";
 
 function DashboardCard01(prices) {
-  // const {calculation} = useSelector((state) => state.calculation);
-  // console.log('calculation: ',calculation);
-  // console.log("prices: ",prices.prices);
+
   const dispatch = useDispatch();
   // destructure soldItems from useSelecter state.pos
   const { soldItems } = useSelector((state) => state.pos);

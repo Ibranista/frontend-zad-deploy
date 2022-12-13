@@ -20,7 +20,7 @@ export const addProduct = createAsyncThunk(
         return await bakeryService.registerProduct(productData, token);
       }
       if (!token) {
-        console.log("መመዝገቢያ ቶክን ማንበብ አልተቻለም!");
+        return "መመዝገቢያ ቶክን ማንበብ አልተቻለም!";
       }
     } catch (error) {
       let message =
@@ -44,7 +44,7 @@ export const fetchProduct = createAsyncThunk(
         return await bakeryService.fetchProduct(token);
       }
       if (!token) {
-        console.log("መመዝገቢያ ቶክን ማንበብ አልተቻለም!");
+        return "መመዝገቢያ ቶክን ማንበብ አልተቻለም!";
       }
     } catch (error) {
       const message =

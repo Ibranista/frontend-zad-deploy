@@ -55,10 +55,9 @@ function SoldItemLists() {
     dispatch(BrowseIngredients());
   }, [dispatch]);
 
-  console.log(bakeryProduct);
   useEffect(() => {
     if (isError) {
-      console.log("የሆነ ችግር አለ: ", message);
+      toast.error(message);
     }
 
     dispatch(fetchSoldItems());

@@ -20,7 +20,7 @@ function FetchBakeryProducts(toggler) {
 
   useEffect(() => {
     if (isError) {
-      console.log("የሆነ ችግር አለ: ", message);
+      toast(message);
     }
 
     dispatch(fetchProduct());

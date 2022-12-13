@@ -20,7 +20,7 @@ export const registerSell = createAsyncThunk(
         return await posService.registerSell(productData, token);
       }
       if (!token) {
-        console.log("መመዝገቢያ ቶክን ማንበብ አልተቻለም!");
+        return "there's no token!"
       }
     } catch (error) {
       let message =
@@ -44,7 +44,7 @@ export const fetchSoldItems = createAsyncThunk(
         return await posService.fetchProduct(token);
       }
       if (!token) {
-        console.log("መመዝገቢያ ቶክን ማንበብ አልተቻለም!");
+        return "there's no token!"
       }
     } catch (error) {
       const message =

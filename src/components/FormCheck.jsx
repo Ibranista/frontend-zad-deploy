@@ -14,7 +14,6 @@ function FormCheck() {
   function handleSelect(data) {
     setSelectedOptions(data);
   }
-  console.log("values: ", values);
   return (
     <>
       <div>FormCheck</div>

@@ -40,7 +40,6 @@ function ItemSell() {
     let soldItems = formData.map((item) => item);
 
     dispatch(registerSell(soldItems));
-    console.log(soldItems);
   };
 
   let addForm = () => {

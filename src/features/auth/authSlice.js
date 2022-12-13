@@ -11,7 +11,6 @@ const initialState = {
   isLoading: false,
   message: '',
 }
-console.log(initialState.user)
 
 // Register user
 export const register = createAsyncThunk(
@@ -82,7 +81,6 @@ export const authSlice = createSlice({
         state.isLoading = false
         state.isSuccess = true
         state.user = action.payload
-        console.log("action",action);
       })
       .addCase(Login.rejected, (state, action) => {
         state.isLoading = false

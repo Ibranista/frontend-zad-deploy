@@ -13,7 +13,6 @@ import { reset } from "../../features/ingredients/ingredientSlice";
 function FetchIngredient({ toggler }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const state = useSelector((state) => state);
-  console.log("state", state);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { user } = useSelector((state) => state.auth);

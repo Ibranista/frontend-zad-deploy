@@ -18,7 +18,7 @@ export const BrowseIngredients = createAsyncThunk(
         return await ingredientService.FetchIngredients(token);
       }
       if (!token) {
-        console.log("no token found!");
+        return "no token"
       }
     } catch (error) {
       const message =
@@ -85,7 +85,6 @@ const ingredientSlice = createSlice({
         state.isLoading = false;
         state.isSuccess = true;
         state.ingredients = action.payload;
-        console.log("ingredients", action);
       })
       .addCase(BrowseIngredients.rejected, (state, action) => {
         state.isLoading = false;

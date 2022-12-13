@@ -7,7 +7,6 @@ const API_URL = "/ing/browse-ingredients";
 const Register_API = "/ing/add-ingredient";
 
 const RegisterIngredients = async (Data,myToken) => {
-  console.log('servicePage: ',myToken)
   const config = {
     headers: {
       Authorization: `Bearer ${myToken}`
@@ -19,7 +18,7 @@ const RegisterIngredients = async (Data,myToken) => {
     }
   })
    if(!response.data){
-    console.log('when registering ingredient no response from service.')
+    return "no token"
    }
    return response.data
  }
@@ -32,7 +31,6 @@ const FetchIngredients = async (token) => {
   const response = await axios.get(API_URL,{  headers: {
       Authorization: `Bearer ${token}`,
     }} );
-  console.log("fetch-response",response);
 
   return response.data;
 };

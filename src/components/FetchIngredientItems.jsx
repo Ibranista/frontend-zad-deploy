@@ -13,10 +13,9 @@ function FetchIngredientItems() {
   let { ingredients, isError, isLoading, message } = useSelector(
     (state) => state.ingredient
   );
-  console.log(ingredients);
   useEffect(() => {
     if (isError) {
-      console.log("የሆነ ችግር አለ: ", message);
+      toast.error(message);
     }
 
     dispatch(BrowseIngredients());
