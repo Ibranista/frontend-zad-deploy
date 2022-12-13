@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        loginhero: "url('../src/assets/hero-images/caffe-pple.jpeg')",
+        loginhero: "url('../src/assets/hero-images/caffe-pple.jpg')",
         ingredient: "url('../src/images/ingredient.jpg')",
         coffeGif: "url('../src/assets/gif/zad.gif')"
       },
