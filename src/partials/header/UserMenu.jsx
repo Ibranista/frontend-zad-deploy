@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link, Navigate } from "react-router-dom";
 import Transition from "../../utils/Transition";
 
-import UserAvatar from "../../images/user-avatar-32.png";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { logout, reset } from "../../features/auth/authSlice";

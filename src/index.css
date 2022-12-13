@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
 
+/* additional styles */
+@import "./css/additional-styles/utility-patterns.css";
+@import "./css/additional-styles/range-slider.css";
+@import "./css/additional-styles/toggle-switch.css";
+@import "./css/additional-styles/flatpickr.css";
+@import "./css/additional-styles/theme.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* additional styles */
-@import './css/additional-styles/utility-patterns.css';
-@import './css/additional-styles/range-slider.css';
-@import './css/additional-styles/toggle-switch.css';
-@import './css/additional-styles/flatpickr.css';
-@import './css/additional-styles/theme.css';
 
 :root {
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -68,15 +68,15 @@
   .color-greyish-blue {
     color: var(--color-greyish-blue);
   }
-  
-  .widthofinput{
+
+  .widthofinput {
     width: 36.7em;
   }
 
- .whole-container{
-  min-width: 430px;
-  min-height: 439px;
- }
+  .whole-container {
+    min-width: 430px;
+    min-height: 439px;
+  }
 
   .bg-input-border {
     border: solid var(--bg-input-border);
