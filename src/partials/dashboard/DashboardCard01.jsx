@@ -8,7 +8,6 @@ import { tailwindConfig, hexToRGB } from "../../utils/Utils";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchSoldItems } from "../../features/pos/posSlice";
 import { useEffect } from "react";
-import calculationSlice from "../../features/calculations/calculationSlice";
 
 function DashboardCard01(prices) {
 
