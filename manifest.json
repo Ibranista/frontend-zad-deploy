@@ -23,20 +23,20 @@
     "file": "assets/zad.7d81f1b3.gif",
     "src": "src/assets/gif/zad.gif"
   },
-  "src/assets/hero-images/caffe-pple.jpg": {
-    "file": "assets/caffe-pple.06a59ccb.jpg",
-    "src": "src/assets/hero-images/caffe-pple.jpg"
-  },
   "src/images/ingredient.jpg": {
     "file": "assets/ingredient.64971c96.jpg",
     "src": "src/images/ingredient.jpg"
   },
+  "src/assets/hero-images/caffe-pple.jpg": {
+    "file": "assets/caffe-pple.06a59ccb.jpg",
+    "src": "src/assets/hero-images/caffe-pple.jpg"
+  },
   "src/main.jsx": {
-    "file": "assets/main.d1e55999.js",
+    "file": "assets/main.51cc1c9e.js",
     "src": "src/main.jsx",
     "isEntry": true,
     "css": [
-      "assets/main.99fb17fa.css"
+      "assets/main.0162baae.css"
     ],
     "assets": [
       "assets/ingredients.13efc9c9.svg",
@@ -50,7 +50,7 @@
     ]
   },
   "src/main.css": {
-    "file": "assets/main.99fb17fa.css",
+    "file": "assets/main.0162baae.css",
     "src": "src/main.css"
   }
 }
