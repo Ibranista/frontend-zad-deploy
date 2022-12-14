@@ -1,0 +1,56 @@
+{
+  "src/assets/icons/message-icon.svg": {
+    "file": "assets/message-icon.ee004b32.svg",
+    "src": "src/assets/icons/message-icon.svg"
+  },
+  "src/assets/icons/key-icon.svg": {
+    "file": "assets/key-icon.68bb7c79.svg",
+    "src": "src/assets/icons/key-icon.svg"
+  },
+  "src/assets/icons/ingredients.svg": {
+    "file": "assets/ingredients.13efc9c9.svg",
+    "src": "src/assets/icons/ingredients.svg"
+  },
+  "src/images/icon-01.svg": {
+    "file": "assets/icon-01.e89d7385.svg",
+    "src": "src/images/icon-01.svg"
+  },
+  "src/assets/images/3977.jpg": {
+    "file": "assets/3977.326b896f.jpg",
+    "src": "src/assets/images/3977.jpg"
+  },
+  "src/images/ingredient.jpg": {
+    "file": "assets/ingredient.64971c96.jpg",
+    "src": "src/images/ingredient.jpg"
+  },
+  "src/assets/gif/zad.gif": {
+    "file": "assets/zad.7d81f1b3.gif",
+    "src": "src/assets/gif/zad.gif"
+  },
+  "src/assets/hero-images/caffe-pple.jpg": {
+    "file": "assets/caffe-pple.06a59ccb.jpg",
+    "src": "src/assets/hero-images/caffe-pple.jpg"
+  },
+  "src/main.jsx": {
+    "file": "assets/main.ef61403e.js",
+    "src": "src/main.jsx",
+    "isEntry": true,
+    "css": [
+      "assets/main.0162baae.css"
+    ],
+    "assets": [
+      "assets/ingredients.13efc9c9.svg",
+      "assets/icon-01.e89d7385.svg",
+      "assets/message-icon.ee004b32.svg",
+      "assets/key-icon.68bb7c79.svg",
+      "assets/3977.326b896f.jpg",
+      "assets/ingredient.64971c96.jpg",
+      "assets/zad.7d81f1b3.gif",
+      "assets/caffe-pple.06a59ccb.jpg"
+    ]
+  },
+  "src/main.css": {
+    "file": "assets/main.0162baae.css",
+    "src": "src/main.css"
+  }
+}
